@@ -1,6 +1,8 @@
-.mycopernicus_credentials
-scripts/utils/__pycache__
-data/motu/aviso/*nc
-data/era5/*nc
-scripts/download.py
-scripts/cut_grid.py
+# compiled python modules
+*.py[cod]
+
+# setuptools distribution folder
+/dist/
+/build/
+
+cdsapi_wrappy/__pycache__
