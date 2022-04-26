@@ -8,7 +8,7 @@ def readme():
 
 #reqs = [line.strip() for line in open('requirements.txt') if not line.startswith('#')]
 
-setup(name              = "weather_ibm",
+setup(name              = "cdsapi_wrappy",
       version           = "1.0",
       description       = "A package created by Dalton Sasaki and Danilo Silva, to download ERA5 dataset using the CDS API.",
       long_description  = readme(),
