@@ -6,3 +6,9 @@ TODO: document this
 
 
 Create ~/.cdsapirc on your user's home folder, adding your key provided by the CDS ...
+
+
+Requirements:
+numpy
+cdsapi
+pandas
