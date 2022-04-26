@@ -1,7 +1,7 @@
 import numpy as np
 import cdsapi
 
-from utils import formatting_date, load_databases
+from .utils import formatting_date, load_databases
 
 ###############################################################################
 
