@@ -53,7 +53,7 @@ def build_request(database, area, year, month, day, hour,
     request['day'] = [f'{x:02d}' for x in np.arange(1,3,1)]
     request['time'] = [f'{x:02d}:00' for x in np.arange(24)]
     request['area'] = [area['latN'],area['lonW'],area['latS'],area['lonE']]
-    request['variable'] = ['sea_surface_temperature']
+    request['variable'] = variables
     
     return request
     
