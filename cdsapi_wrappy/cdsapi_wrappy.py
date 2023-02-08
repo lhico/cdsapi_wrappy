@@ -45,13 +45,13 @@ def build_request(database, area, year, month, day, hour,
     # checking the secondary variables now
     year = formatting_date(year, digits=4)
     month = formatting_date(month, digits=2)
-    day = formatting_date(day, digits=2)
+    day = formatting_date(day, digits=2, time_fmt='day')
     hour = formatting_date(hour, digits=2)
     
-    request['year'] = str(year).zfill(2)
-    request['month'] = str(month).zfill(2)
-    request['day'] = [f'{x:02d}' for x in np.arange(1,3,1)]
-    request['time'] = [f'{x:02d}:00' for x in np.arange(24)]
+    request['year'] = year
+    request['month'] = month
+    request['day'] = day
+    request['time'] = hour
     request['area'] = [area['latN'],area['lonW'],area['latS'],area['lonE']]
     request['variable'] = variables
     
