@@ -37,6 +37,7 @@ If you are not logged, please login and go to the step below.
     ```
     git clone https://github.com/lhico/cdsapi_wrappy.git
     cd cdsapi_wrappy
+    git checkout 1_hotfix-hard-coded-values-in-build_request
     pip install .
     ```
 ## Download example:
