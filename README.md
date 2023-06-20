@@ -47,8 +47,10 @@ This is an example of the package usage. Other examples are in the `notebooks` d
 import cdsapi_wrappy as cds
 import numpy as np
 
+database = "reanalysis-era5-single-levels"
 
-request = cds.build_request("reanalysis-era5-single-levels",
+
+request = cds.build_request(database,
                      {'latN':-20, 'lonW':-55, 'latS':-35,'lonE':-35},
                      2019,
                      7,
@@ -63,7 +65,7 @@ request = cds.build_request("reanalysis-era5-single-levels",
                       product_type =  "reanalysis",
                        format="netcdf")
 
-cds.request_cdsapi(request=request)
+cds.request_cdsapi(request=request, name=database, target='download.nc' )
 ```
 
 
